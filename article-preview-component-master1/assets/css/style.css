@@ -1,0 +1,88 @@
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Manrope", sans-serif;
+}
+.container {
+  width: 330px;
+  background-color: white;
+  margin: 20px auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.drawers-image {
+  height: 200px;
+  background-image: url(../images/drawers.jpg);
+  /* background-position: center; */
+  background-size: cover;
+}
+
+.main-content {
+  padding: 30px;
+}
+.title h1 {
+  color: hsl(218, 30%, 23%);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.title p {
+  color: hsl(217, 19%, 35%);
+  line-height: 25px;
+  font-size: 15px;
+  opacity: 0.8;
+}
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.member {
+  display: flex;
+}
+.member img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.member .member-info {
+  margin: auto 0;
+}
+.member .member-info h2 {
+  font-size: 15px;
+  color: hsl(217, 19%, 35%);
+  font-weight: 1000;
+  margin-bottom: 7px;
+}
+.member .member-info h3 {
+  opacity: 0.5;
+  font-size: 15px;
+  color: hsl(217, 19%, 35%);
+}
+
+.share img {
+  margin-top: 20px;
+  width: 20px;
+}
+a:hover {
+  width: 100%;
+  height: 20px;
+}
+@media only screen and (min-width: 768px)
+{
+  .container{
+    display: flex;
+    width: 800px;
+    margin: 200px auto;
+    height: 250px;
+  }
+  .main-content{
+    width: 400px;
+  }
+  .drawers-image {
+    height: 300px;
+    width: 40%;
+    background-image: url(../images/drawers.jpg);
+    /* background-position: center; */
+    background-size: cover;
+  }
+
+}

@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+.logo-img img {
+  width: 120px;
+  margin: 30px;
+}
+.girl-img {
+  width: 100%;
+  background-image: url(../images/hero-mobile.jpg);
+  height: 250px;
+}
+.main-content {
+  padding: 35px;
+}
+.title h3 {
+  letter-spacing: 5px;
+  font-size: 40px;
+  font-weight: 100;
+  color: hsl(0, 36%, 70%);
+}
+.title h3 strong {
+  color: hsl(0, 6%, 24%);
+  font-weight: 400;
+}
+.title p {
+  margin: 20px 0;
+  color: hsl(0, 36%, 70%);
+  font-size: 14px;
+}
+.footer {
+  display: flex;
+  border-radius: 20px;
+  border: none;
+}
+.footer input {
+  width: 540px;
+  border: 1px solid hsl(0, 36%, 70%);
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+input::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.footer button {
+  position: relative;
+  left: -30px;
+  border-radius: 20px;
+  width: 100px;
+  border: none;
+  background-color: hsl(0, 36%, 70%);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+button:hover {
+  background-color: hsl(0, 22%, 85%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .girl-img {
+    background-image: url(../images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+
+  section {
+    flex: 0 0 50%;
+    height: 100%;
+    border: 1px solid yellow;
+  }
+  .main-content {
+    width: 400px;
+    margin: 150px auto;
+    border: 1px solid green;
+  }
+  .main-content h3 {
+    margin-bottom: 50px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+    border: 1px solid black;
+  }
+
+  header {
+    position: absolute;
+    left: 120px;
+    top: 20px;
+  }
+  .logo-img img {
+    width: 150px;
+  }
+  .title h3 {
+    font-size: 60px;
+    letter-spacing: 15px;
+  }
+  .title p {
+    line-height: 23px;
+  }
+}

@@ -1,0 +1,109 @@
+body {
+  background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+  margin: 100px auto;
+  width: 300px;
+  height: 500px; /*sora sil bunu!!!*/
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.summary-img img {
+  width: 100%;
+}
+
+.main-content {
+  text-align: center;
+  margin: 15px;
+  height: 300px;
+  
+}
+
+.title{
+    padding: 14px;
+}
+
+.title h1 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 1000;
+  color: hsl(223, 47%, 23%);
+}
+
+.title p {
+  line-height: 28px;
+  color: rgb(91, 91, 151);
+  opacity: 0.8;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.icon{
+    margin-top: 25px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.icon img {
+    border: 1px solid ;
+    border-radius: 50%;
+    width: 40px;
+    border: 1px solid hsl(225, 100%, 94%);
+    margin-right: 10px;
+}
+
+.Annual-plan h2{
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 1000;
+    color: hsl(223, 47%, 23%);
+    font-size: 15px;
+    margin-bottom: 5px;
+    
+  }
+.Annual-plan h3{
+    color: rgb(91, 91, 151);
+    opacity: 0.8;
+    font-family: "Red Hat Display", sans-serif;
+   
+}
+.link-change a {
+  margin-right: 10px;
+    margin-left:30px;
+    color: blue;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    
+}
+.button{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.button button{
+    width: 100%;
+    border: none;
+    padding: 13px;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 1000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; 
+}
+.button-cancel button{
+    border: none;
+    background-color: white;
+    margin-top: 20px;
+    font-family: "Red Hat Display", sans-serif;
+    color: hsl(225, 32%, 65%) ;
+    font-weight: 1000;
+}
+
+
+
+

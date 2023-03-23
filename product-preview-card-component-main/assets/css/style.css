@@ -1,0 +1,116 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    background-color: white;
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 14px;
+    overflow: hidden;
+
+}
+
+.parfum-img img {
+    width: 100%;
+    font-family: 'Montserrat', san
+}
+
+.main-content {
+    padding: 0 20px;
+}
+
+.main-content h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    opacity: 0.5;
+    padding-top: 10px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.main-content h2 {
+    font-family: 'Fraunces', serif;
+    margin: 15px auto;
+    font-size: 29px;
+    opacity: 0.9;
+
+}
+
+.main-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    line-height: 21px;
+
+
+
+}
+.sales{
+    display: flex;
+    align-items: center;
+}
+
+.sales-discount p {
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+    
+}
+.sales-old{
+    margin-left: 10px;
+    opacity: 0.7;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+}
+
+.pay {
+    position: relative;
+    margin: 20px 0;
+    text-align: center;
+    padding: 15px ;
+    border-radius: 10px;
+    background-color:hsl(158, 36%, 37%) ;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+.pay:hover{
+    background-color:hsl(158, 31%, 20%) ;
+}
+
+.pay img {
+    position: absolute;
+    left: 60px;
+    bottom: 15px;
+}
+
+@media only screen and (min-width: 768px){
+    .container{
+        margin: 100px auto;
+        display: flex;
+        width: 600px;
+    }
+    .parfum-img {
+        background-image: url(../images/image-product-desktop.jpg);
+        background-repeat: no-repeat;    
+        width: 50%;
+        background-size: cover;
+    }
+    
+    .main-content{
+        width: 50%;
+        padding-top:20px;
+    }
+
+    .main-content p{
+        margin-bottom: 20px;
+    }
+
+    .parfum-img img {
+        display: none;
+    }
+}

@@ -1,0 +1,117 @@
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla", sans-serif;
+}
+.container {
+  margin: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.header {
+  background-color: white;
+  padding: 20px;
+}
+.header h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.header h2{
+    margin-bottom: 20px;
+    color: yellow;
+}
+.header .text-header{
+line-height: 23px;
+color: hsl(205, 11%, 66%);
+font-size: 14px;
+}
+
+/* footer */
+
+.footer{
+    background-color: hsl(179, 62%, 43%);
+    padding: 20px;
+}
+.footer h3{
+  color: white;
+  margin-bottom: 20px;
+}
+.price{
+  display: flex;
+  margin-bottom: 10px;
+}
+.price strong {
+font-size: 25px;
+color: white;
+margin-right: 10px;
+}
+.price .par-time{
+  padding: 6px 0;
+  text-align: center;
+  color: white;
+  opacity: 0.5;
+  
+}
+.access{
+  color: white;
+  opacity: 0.7;
+}
+button{
+  width: 100%;
+  margin: 20px 0 30px;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  color: white;
+  height: 40px;
+}
+h4{
+  margin-bottom: 20px ;
+  color: white;
+}
+.text-footer{
+  padding-right:40px ;
+  color: white;
+  opacity: 0.7;
+}
+@media only screen and (min-width: 767px){
+  .container{
+    width: 550px;
+    margin: 100px auto;
+    padding: 0;
+  }
+  .footer{
+    display: flex;
+    padding: 0;
+    
+  }
+  .leftside{
+    margin: 50px 0 0 50px;
+    padding: 0;
+    
+    margin-right: 30px;
+    width: 100%;
+
+  }
+  button{
+    width: 100%;
+  }
+  .rightside{
+    width:  700px;
+    margin-right: 0;
+    background-color: hsl(179, 48%, 59%);
+    padding: 30px 20px 0 40px;
+  }
+  .text-footer{
+    margin-right: 50px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .text-footer{
+    padding-right:0 ;
+    
+  }
+
+
+
+}

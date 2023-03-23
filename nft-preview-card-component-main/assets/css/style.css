@@ -1,0 +1,109 @@
+body {
+    font-family: 'Outfit';
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+    padding: 15px;
+    margin: 100px auto;
+    width: 200px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.nft-image {
+    width: 200px;  
+    border-radius: 10px;
+}
+
+.nft-image img {
+    width: 100%;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    margin-top: 15px;
+    font-size: 15px;
+    color: hsl(0, 0%, 100%);
+    opacity: 0.8;
+}
+
+.title p {
+    font-weight: 300;
+    margin-top: 13px;
+    font-size: 12px;
+    color: lightblue;
+    opacity: 0.5;
+    line-height: 18px;
+}
+
+.ethereum{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.ethereum img {
+    width: 7px;
+}
+
+.clock{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.clock img{
+    width: 13px;
+}
+.coin-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.8px solid rgba(173, 216, 230, 0.219);
+    padding-bottom: 10px;
+}
+
+.coin-time strong {
+    color: hsl(178, 100%, 50%);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.coin-time small {
+    color: lightblue;
+    font-size: 12px;
+    opacity: 0.5;
+    
+}
+
+.member-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+.member-info .jules-img {
+    margin-right: 10px;
+    width: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+    
+}
+
+.member-info h4 {
+    color: lightblue;
+    opacity: 0.7;
+}
+
+.member-info small {
+    padding-left: 2px;
+    color: white;
+    font-weight: 300;
+}

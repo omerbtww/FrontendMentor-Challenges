@@ -1,0 +1,198 @@
+:root {
+  --pale-blue: hsl(243, 100%, 93%);
+  --grayish-blue: hsl(229, 7%, 55%);
+  --dark-blue: hsl(228, 56%, 26%);
+  --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+body {
+  background: var(--very-dark-blue);
+  background-image: url("../images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 112%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+}
+.container {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 30px;
+}
+.main {
+  background-color: #1d2c67;
+  border-radius: 10px;
+  border-top-right-radius: 100px;
+  width: 325px;
+  border-radius: 8px 80px 8px 8px;
+}
+.main-logo {
+  margin-bottom: 30px;
+  margin-left: 40px;
+  padding-top: 40px;
+}
+.main-buttons {
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 32px;
+}
+.main-buttons > * {
+  background-color: #0c122c;
+  height: 50px;
+  line-height: 60px;
+  text-align: center;
+  width: 50px;
+  border-radius: 10px;
+}
+.main-file {
+  margin-left: 40px;
+}
+.main-folder {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.storage {
+  position: relative;
+  background-color: #1d2c67;
+  border-radius: 10px;
+  width: 500px;
+  padding: 36px;
+}
+.storage-description {
+  color: white;
+  margin-bottom: 18px;
+}
+.storage-description strong {
+  font-weight: 700;
+  color: white;
+}
+.storage-use {
+  position: relative;
+  background-color: #141f4c;
+  border-radius: 50px;
+  height: 20px;
+  margin-bottom: 18px;
+  width: 450px;
+  text-align: center;
+  padding: 2px;
+}
+
+.storage-use::before {
+  background-color: white;
+  content: "";
+  background: linear-gradient(90deg, #ffa399 48%, #ff4d97 96%);
+  border-radius: 10px;
+  display: block;
+  height: 14px;
+  left: 2px;
+  position: relative;
+  margin-top: 3px;
+  width: 290px;
+}
+
+.storage-use::after {
+  background-color: #fff;
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 12px;
+  left: 278px;
+  position: relative;
+  top: -13px;
+  width: 12px;
+}
+
+.storage-minmax {
+  margin-top: -10px;
+  color: white;
+  display: flex;
+  font-weight: 700;
+  justify-content: space-between;
+  width: 450px;
+}
+
+.button {
+  background-color: white;
+}
+
+.left {
+  position: absolute;
+  top: -40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  right: 20px;
+  color: #848794;
+  font-size: 12px;
+  background-color: #fff;
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  font-weight: 700;
+  padding: 16px 20px;
+  letter-spacing: 1px;
+}
+
+.left span {
+  color: rgb(4, 4, 39);
+  font-size: 36px;
+}
+
+.left::after {
+  content: "";
+  width: 25px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 60px;
+  left: 143px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+@media only screen and (max-width: 728px) {
+  body {
+   background-size: cover;
+   background-image: url(/assets/images/bg-mobile.png);
+  }
+  .container {
+    flex-direction: column;
+  }
+  .storage {
+    width: 250px;
+  }
+  .storage-use {
+    width: 240px;
+  }
+  .storage-use::before {
+    height: 14px;
+    left: 2px;
+    margin-top: 3px;
+    width: 200px;
+  }
+  .storage-use::after {
+    height: 12px;
+    left: 188px;
+    top: -13px;
+    width: 12px;
+  }
+  .storage-minmax {
+    width: 250px;
+    font-size: 16px;
+    
+  }
+
+  .left::after {
+    width: 0px;
+    height: 0px;
+  }
+  .left {
+    top: 120px;
+    right: 80px;
+    border-radius: 10px;
+  }
+  .storage-description {
+    font-size: 14px;
+  }
+}
